@@ -1,0 +1,459 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6b6b;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff8787;
+}
+
+/* Header Styles */
+.header {
+    background-color: #16213e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.main-nav a {
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #4ecdc4;
+}
+
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    background-color: #2b2d42;
+    color: #e5e5e5;
+    outline: none;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #4ecdc4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #45b7aa;
+}
+
+.user-actions {
+    margin-left: 20px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+.action .icon {
+    margin-right: 5px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.banner-slider {
+    position: relative;
+    height: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-slides {
+    display: flex;
+    height: 100%;
+    width: 800%; /* 8 slides, each 100% wide */
+    transition: transform 1s ease-in-out; /* Slower transition */
+}
+
+.slide {
+    flex: 0 0 12.5%; /* 100% / 8 slides = 12.5% */
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #4ecdc4;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.start-btn {
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #ff8787;
+}
+
+.banner-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prev-btn, .next-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev-btn img, .next-btn img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #4ecdc4;
+}
+
+/* Sections */
+.section {
+    padding: 30px 20px;
+    width: 100%; /* Ensure section takes full screen width */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Contain the sliding grid */
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4ecdc4;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4ecdc4;
+    display: inline-block;
+}
+
+.anime-grid {
+    display: flex;
+    width: 960px; /* Fixed width for 4 cards (4 * 240px) */
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto; /* Center the grid */
+    min-width: 2400px; /* Ensure space for all 10 cards (10 * 240px) */
+}
+
+.anime-card {
+    background-color: #16213e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px;
+    width: 220px;
+    flex: 0 0 220px; /* Fixed width for each card */
+    margin: 0 10px; /* Gap between cards */
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.anime-card h3 {
+    padding: 15px;
+    font-size: 1.3em;
+    color: #e5e5e5;
+}
+
+.anime-card p {
+    padding: 0 15px 15px;
+    color: #a3bffa;
+    font-size: 0.9em;
+}
+
+.watch-btn, .download-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.watch-btn:hover {
+    background-color: #ff8787;
+}
+
+.download-btn {
+    background-color: #4ecdc4;
+}
+
+.download-btn:hover {
+    background-color: #45b7aa;
+}
+
+.genre-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.genre-list a {
+    padding: 8px 15px;
+    background-color: #2b2d42;
+    border-radius: 20px;
+    color: #e5e5e5;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.genre-list a:hover {
+    background-color: #4ecdc4;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #16213e;
+    color: #a3bffa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #4ecdc4;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: #45b7aa;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .anime-card {
+        width: 180px;
+        flex: 0 0 180px;
+        height: 320px;
+    }
+    .anime-grid {
+        width: 780px; /* 4 * (180px + 20px margin) */
+        min-width: 1960px; /* 10 * (180px + 20px margin) */
+    }
+    .anime-card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav, .search-bar, .user-actions {
+        margin: 10px 0;
+    }
+    .search-bar input {
+        width: 200px;
+    }
+    .banner-slider {
+        height: 250px;
+    }
+    .slide img {
+        height: 250px;
+    }
+    .banner-text h1 {
+        font-size: 1.8em;
+    }
+    .banner-text p {
+        font-size: 1em;
+    }
+    .start-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    .anime-grid {
+        width: 220px; /* Show 1 card at a time on mobile */
+        flex-direction: column;
+        min-width: 220px; /* Reset for single card */
+    }
+    .anime-card {
+        width: 200px;
+        flex: 0 0 200px;
+        height: 300px;
+        margin: 10px 0; /* Vertical gap on mobile */
+    }
+    .anime-card img {
+        height: 200px;
+    }
+    .section-title {
+        font-size: 1.5em;
+    }
+    .banner-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .prev-btn, .next-btn {
+        padding: 8px;
+    }
+}
+
+/* Navigation Buttons */
+.section .next-btn, .section .prev-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px; /* Space around buttons */
+    display: inline-block; /* Ensure buttons are visible */
+}
+
+.section .next-btn:hover, .section .prev-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section .next-btn img, .section .prev-btn img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Navigation Container */
+.section-nav {
+    text-align: center; /* Center the buttons */
+    margin-top: 10px;
+}

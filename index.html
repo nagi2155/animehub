@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStream - Watch & Download Anime</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="resources/logo.png" alt="AnimeHub Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="popular.html">Popular</a></li>
+                    <li><a href="#new">New Releases</a></li>
+                    <li><a href="#animehub">New on AnimeHub</a></li>
+                    <li><a href="#genres">Genres</a></li>
+                
+                    <li></a>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search anime...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <div class="action">
+                    <a href="#">Login</a>
+                    <span class="icon">👤</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="banner-slider">
+            <div class="banner-slides">
+                <div class="slide">
+                    <img src="resources/alya.jpeg" alt="Anime Banner 1">
+                    <div class="banner-text">
+                        <h1>Alya Sometimes Hides Her Feelings in Russian</h1>
+                        <p>Watch heart touching high school love!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/a couple of cooks.jpg" alt="Anime Banner 2">
+                    <div class="banner-text">
+                        <h1>watch A couple of cooks!</h1>
+                        <p>Watch Nagi's Dual Love!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/demon slayer.png" alt="Anime Banner 3">
+                    <div class="banner-text">
+                        <h1>Demon Slayer</h1>
+                        <p>Watch Stunning visuals in HD!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/gachiakuta.png" alt="Anime Banner 4">
+                    <div class="banner-text">
+                        <h1>Gachiakuta</h1>
+                        <p>Dark Fantasy!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/chainsaw man.png" alt="Anime Banner 5">
+                    <div class="banner-text">
+                        <h1>chainsaw man</h1>
+                        <p>devil powers unleashed!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/jjk.png" alt="Anime Banner 6">
+                    <div class="banner-text">
+                        <h1>Discover Jujutsu Kaisen</h1>
+                        <p>Supernatural action awaits!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/one piece.png" alt="Anime Banner 7">
+                    <div class="banner-text">
+                        <h1>Explore One Piece</h1>
+                        <p>Join Luffy's Adventure</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="resources/attack on titan.png" alt="Anime Banner 8">
+                    <div class="banner-text">
+                        <h1>Watch Attack on Titan</h1>
+                        <p>Watch Epic Battles in HD!</p>
+                        <button class="start-btn">Start Watching</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-controls">
+                <button class="prev-btn">
+                    <img src="resources/first arrow.png" alt="Previous">
+                </button>
+                <div class="dots"></div>
+                <button class="next-btn">
+                    <img src="resources/seceond arrow.png" alt="Next">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular" class="section"><a href="popular.html">
+        <h2 class="section-title">Popular Anime</h2></a>
+        <div class="anime-grid" data-index="0">
+            <div class="anime-card">
+                <img src="resources/naruto.png" alt="Anime 1">
+                <h3>Naruto</h3>
+                <p>Action, Adventure</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/attack on titan.jpg" alt="Anime 2">
+                <h3>Attack on Titan</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/one piece.jpeg" alt="Anime 3">
+                <h3>One Piece</h3>
+                <p>Adventure, Fantasy</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/demon slayer.jpeg" alt="Anime 4">
+                <h3>Demon Slayer</h3>
+                <p>Action, Fantasy</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/jjk.jpg" alt="Anime 5">
+                <h3>Jujutsu Kaisen</h3>
+                <p>Action, Supernatural</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/wind breakers.jpeg" alt="Anime 6">
+                <h3>Wind Breakers</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/haikyu.jpeg" alt="Anime 7">
+                <h3>Haikyuu!!</h3>
+                <p>Sports, Comedy</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/black clover.jpeg" alt="Anime 8">
+                <h3>Black Clover</h3>
+                <p>Fantasy, Action</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/black butler.jpeg" alt="Anime 9">
+                <h3>Bleach</h3>
+                <p>Action, Supernatural</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime2.jpg" alt="Anime 10">
+                <h3>Fullmetal Alchemist</h3>
+                <p>Action, Fantasy</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+        </div>
+        <div class="section-nav">
+            <button class="prev-btn">
+                <img src="resources/first arrow.png" alt="Previous">
+            </button>
+            <button class="next-btn section-next-btn">
+                <img src="resources/seceond arrow.png" alt="Next">
+            </button>
+        </div>
+    </section>
+
+    <section id="new" class="section">
+        <h2 class="section-title">New Releases</h2>
+        <div class="anime-grid" data-index="0">
+            <div class="anime-card">
+                <img src="resources/black butler.jpeg" alt="Anime 4">
+                <h3>Black Butler</h3>
+                <p>Action,Crime</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/fire force.jpg" alt="Anime 5">
+                <h3>Fire Force</h3>
+                <p>Action, Supernatural</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/yaiba.jpeg" alt="Anime 6">
+                <h3>yaiba samurai Legend</h3>
+                <p>Action,samurai</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/tegonia.jpeg" alt="Anime 7">
+                <h3>Tegonia</h3>
+                <p>Sports, Comedy</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/solo leveling.jpeg" alt="Anime 8">
+                <h3>Solo Leveling</h3>
+                <p>Fantasy, Action</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/catch.jpeg" alt="Anime 1">
+                <h3>Catch me at the Ballpark</h3>
+                <p>Action, Adventure</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/dan da dan.jpeg" alt="Anime 2">
+                <h3>dan da dan</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/my happy marriage.jpeg" alt="Anime 9">
+                <h3>My Happy Marriage</h3>
+                <p>Adventure, Fantasy</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime1.jpg" alt="Anime 10">
+                <h3>Bleach</h3>
+                <p>Action, Supernatural</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime2.jpg" alt="Anime 11">
+                <h3>Fullmetal Alchemist</h3>
+                <p>Action, Fantasy</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+        </div>
+        <div class="section-nav">
+            <button class="prev-btn">
+                <img src="resources/first arrow.png" alt="Previous">
+            </button>
+            <button class="next-btn section-next-btn">
+                <img src="resources/seceond arrow.png" alt="Next">
+            </button>
+        </div>
+    </section>
+
+    <section id="animehub" class="section">
+        <h2 class="section-title">New on AnimeHub</h2>
+        <div class="anime-grid" data-index="0">
+            <div class="anime-card">
+                <img src="resources/devil.jpeg" alt="Anime 6">
+                <h3>Devil may cry</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/mobile suit.jpg" alt="Anime 7">
+                <h3>Mobile Suit Gundam</h3>
+                <p>Sports, Comedy</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/immortal king.jpeg" alt="Anime 8">
+                <h3>The Daily Life of the Immortal King</h3>
+                <p>Fantasy, Action</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/log horizons.jpg" alt="Anime 1">
+                <h3>Log Horizon</h3>
+                <p>Action, Adventure</p>
+                <button class="watch-btn">Watch Now</button>
+                
+            </div>
+            <div class="anime-card">
+                <img src="resources/the apothecary.jpg" alt="Anime 2">
+                <h3>The Apothecary Diaries</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+               
+            </div>
+            <div class="anime-card">
+                <img src="resources/solo leveling.jpeg" alt="Anime 6">
+                <h3>Solo Leveling</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/wind breakers.jpeg" alt="Anime 6">
+                <h3>Wind Breakers</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/goblin slayer.jpeg" alt="Anime 6">
+                <h3>Goblin Slayer</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime6.jpg" alt="Anime 6">
+                <h3>Tokyo Revengers</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime6.jpg" alt="Anime 6">
+                <h3>Tokyo Revengers</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime6.jpg" alt="Anime 6">
+                <h3>Tokyo Revengers</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            <div class="anime-card">
+                <img src="resources/anime6.jpg" alt="Anime 6">
+                <h3>Tokyo Revengers</h3>
+                <p>Action, Drama</p>
+                <button class="watch-btn">Watch Now</button>
+              
+            </div>
+            
+        </div>
+        <div class="section-nav">
+            <button class="prev-btn">
+                <img src="resources/first arrow.png" alt="Previous">
+            </button>
+            <button class="next-btn section-next-btn">
+                <img src="resources/seceond arrow.png" alt="Next">
+            </button>
+        </div>
+    </section>
+
+    <section id="genres" class="section">
+        <h2 class="section-title">Browse by Genre</h2>
+        <div class="genre-list">
+            <a href="#">Action</a>
+            <a href="#">Comedy</a>
+            <a href="#">Drama</a>
+            <a href="#">Fantasy</a>
+            <a href="#">Horror</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 AnimeStream. All rights reserved.</p>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
